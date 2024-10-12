@@ -19,7 +19,6 @@ public class MyApplication {
 			
 			//package the application
 		
-		
 //		2. OOPS
 		
 //		3. Core Java APIs
@@ -82,6 +81,8 @@ public class MyApplication {
 		
 		Point point1 = new Point(1,1);
 		Point point2 = point1;
+		System.out.println(point1);
+		System.out.println(point2);
 		//Point1 points to address of Point(1,1)
 //		point2 points to the address
 		
