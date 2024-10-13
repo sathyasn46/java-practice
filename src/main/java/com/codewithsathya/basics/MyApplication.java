@@ -1,6 +1,8 @@
 package com.codewithsathya.basics;
 
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 
 import com.codewithsathya.fundamentals.Types;
@@ -15,6 +17,7 @@ public class MyApplication {
 			//Types
 			explainingTypes();
 			explainingStrings();
+			explainingArrays();
 			//Control flows
 			
 			//package the application
@@ -28,9 +31,50 @@ public class MyApplication {
 		
 	}
 	
+	private static void explainingArrays() {
+		System.out.println("\n===== explainingArrays=====");
+		
+		//Arrays
+		int[] numbers = new int[5];
+		numbers[0] = 9;
+		numbers[1] = 4;
+		numbers[2] = 0;
+		numbers[3] = 3;
+		
+		int[] numbersSample = {9,1,6,4};
+		
+		
+		System.out.println(numbers);
+		System.out.println(Arrays.toString(numbers));
+		Arrays.sort(numbers);
+		System.out.println(Arrays.toString(numbers));
+		
+		
+		//Multi dimentional arrays
+		System.out.println("Multi dimentional arrays");
+		int[][] twoDNumbers = new int[3][3];
+		twoDNumbers[0][0]= 1;
+		twoDNumbers[0][1]= 1;
+		twoDNumbers[0][2]= 1;
+		twoDNumbers[1][0]= 1;
+		twoDNumbers[1][1]= 1;
+		twoDNumbers[1][2]= 1;
+		twoDNumbers[2][0]= 1;
+		twoDNumbers[2][1]= 1;
+		twoDNumbers[2][2]= 1;
+		System.out.println(Arrays.toString(twoDNumbers));
+		System.out.println(Arrays.deepToString(twoDNumbers));
+		
+		int[][] twoDNumbersBraces = {{1,2,3},{4,5,6},{7,8,9}};
+		System.out.println(Arrays.toString(twoDNumbersBraces));
+		System.out.println(Arrays.deepToString(twoDNumbersBraces));
+		
+		System.out.println("\n===== Exit explainingArrays=====");
+	}
+
 	private static void explainingStrings() {
 		System.out.println("\n===== explainingStrings=====");
-		String  msg = "Sathya learns Java Basics";
+		String  msg = "Sathya learns \"Java Basics\"";
 		System.out.println(msg);
 		
 		
@@ -39,12 +83,17 @@ public class MyApplication {
 		System.out.println(msg);
 		System.out.println(msg.replace('a', 'o'));
 		System.out.println(msg);
+		
+		String  filePath = "D:\\Career\\Projects\\workspaces\\eclipse-workspace1\\java-practice";
+		System.out.println(filePath);
 		//Original string is not changed . Strings are immutable. We cannot mutate/change them
 		
 //		Parameters are fields present in the method definition
 //		Arguments are actual values passed to the methods
 		
-		System.out.println("\n===== explainingStrings Exit=====");
+		
+		//Any method that modifies a string will return a new string object
+		System.out.println("\n===== \texplainingStrings Exit\t=====");
 		
 	}
 
