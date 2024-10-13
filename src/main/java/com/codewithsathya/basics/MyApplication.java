@@ -18,6 +18,8 @@ public class MyApplication {
 			explainingTypes();
 			explainingStrings();
 			explainingArrays();
+			explainingConstants();
+			explainingOperators();
 			//Control flows
 			
 			//package the application
@@ -31,6 +33,41 @@ public class MyApplication {
 		
 	}
 	
+	private static void explainingOperators() {
+		// TODO Auto-generated method stub
+		/* 6 Arithmetic operators: 
+		+
+		-
+		*
+		/
+		%
+		*/
+		int result = 10 / 3; //result is a whole number
+		System.out.println(result);
+		double resultDouble = (double) 10 / (double)3;
+		System.out.println(resultDouble);
+		
+		//Increment & decrement
+		int x = 1;
+		int y = x++;
+		System.out.println("y: "+ y);
+		System.out.println("x :" + x);
+		System.out.println("x++ :" + x++);
+		System.out.println("x :" +x);
+		
+		//Augmented/ compound assignment operator
+		x+=2;
+		System.out.println("x :" + x);
+		
+	}
+
+	private static void explainingConstants() {
+		final float PI = 3.14F;
+		
+		System.out.println("Value of PI: "+ PI);
+		
+	}
+
 	private static void explainingArrays() {
 		System.out.println("\n===== explainingArrays=====");
 		
